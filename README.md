@@ -76,8 +76,8 @@ Resulted in **improved model accuracy and stability**.
 
 1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/Denistanb/Fashion-Mnist.git
-   cd Fashion-Mnist
+   git clone https://github.com/Denistanb/Heart-Disease-Classification.git
+   cd Heart-Disease-Classification
 2. **Install Dependencies**:
    ```bash
    pip install pandas numpy matplotlib seaborn scikit-learn
