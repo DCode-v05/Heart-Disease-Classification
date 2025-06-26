@@ -1,86 +1,100 @@
-# ❤️ Heart Disease Classification
+# Heart Disease Classification
 
-A complete exploratory and predictive machine learning project to detect the presence of heart disease using medical features such as chest pain type, cholesterol level, blood pressure, and more.
+## Project Description
+This project aims to predict the presence of heart disease in patients using various medical features. Leveraging machine learning techniques, the project provides a comprehensive workflow from data exploration to model evaluation, helping to identify individuals at risk of heart disease based on clinical data.
 
-> 📊 Performed EDA + 🧠 Trained & Tuned Multiple ML Models + 🔍 Compared Accuracy & Metrics
+## Project Details
 
----
+### Problem Statement
+Heart disease is a leading cause of mortality worldwide. Early detection can save lives. This project uses patient data to build predictive models that classify whether a patient has heart disease.
 
-## 🗂️ Dataset Overview
+### Dataset Overview
+- **Files**: `Data/heart-disease.csv`, `Data/heart.csv`
+- **Source**: Publicly available UCI Heart Disease dataset
+- **Target Variable**: `target` (1 = Heart disease, 0 = No heart disease)
+- **Features**: Age, sex, chest pain type, cholesterol, blood pressure, fasting blood sugar, ECG results, max heart rate, exercise-induced angina, ST depression, slope, number of vessels, thalassemia, etc.
 
-- **Source**: [heart-disease.csv](heart-disease.csv)
-- **Goal**: Predict if a patient has heart disease (1) or not (0)
-- **Target Column**: `target`
+### Exploratory Data Analysis (EDA)
+- Checked for missing/null values
+- Visualized feature distributions and correlations
+- Explored relationships between features and the target variable
 
-### 📋 Feature Descriptions
+### Machine Learning Workflow
+- Data preprocessing and feature engineering
+- Model training and evaluation using:
+  - Logistic Regression
+  - Linear SVC
+  - KNeighbors Classifier
+  - Random Forest Classifier
+  - Bagging Classifier
+  - Perceptron
+  - Linear Regression
+- Hyperparameter tuning with GridSearchCV and RandomizedSearchCV
+- Model comparison using accuracy and other metrics
 
-| Feature     | Description |
-|-------------|-------------|
-| age         | Age of the patient |
-| sex         | 1 = Male, 0 = Female |
-| cp          | Chest pain type (0–3) |
-| trestbps    | Resting blood pressure |
-| chol        | Serum cholesterol (mg/dl) |
-| fbs         | Fasting blood sugar > 120 mg/dl |
-| restecg     | Resting electrocardiographic results |
-| thalach     | Max heart rate achieved |
-| exang       | Exercise induced angina |
-| oldpeak     | ST depression induced by exercise |
-| slope       | Slope of the peak exercise ST segment |
-| ca          | Major vessels colored by flourosopy |
-| thal        | Thalassemia result |
-| target      | 1 = Heart disease, 0 = No heart disease |
+### Results
+- Best performing models: Logistic Regression and Random Forest Classifier (accuracy ~85%)
+- Visual comparison of model performance
 
----
+## Tech Stack
+- Python 3.x
+- Jupyter Notebook
+- pandas, numpy
+- matplotlib, seaborn
+- scikit-learn
 
-## 📊 Exploratory Data Analysis (EDA)
+## Getting Started
 
-- Checked for null/missing values
-- Visualized correlations using heatmap
-- Plotted distributions:
-  - ✅ Heart Disease by Gender
-  - ✅ Age vs Max Heart Rate
-  - ✅ Chest Pain Type vs Heart Disease
-
----
-
-## ⚙️ Machine Learning Models Used
-
-| Model                    | Accuracy (%) |
-|-------------------------|--------------|
-| Logistic Regression      | 85.25%       |
-| Linear SVC               | 81.96%       |
-| KNeighbors Classifier    | 60.66%       |
-| Random Forest Classifier | 85.24%       |
-| Bagging Classifier       | 70.49%       |
-| Perceptron               | 50.82%       |
-| Linear Regression        | 47.66%       |
-
-> 📈 Plotted all model scores with bar graphs for easy comparison.
-
----
-
-## 🛠️ Hyperparameter Tuning
-
-Used **GridSearchCV** and **RandomizedSearchCV** to optimize:
-
-- ✅ Logistic Regression  
-- ✅ Linear SVC  
-- ✅ Random Forest Classifier  
-
-Resulted in **improved model accuracy and stability**.
-
----
-
-## ▶️ How to Run
-
-1. **Clone the Repository**:
+1. **Clone the Repository**
    ```bash
-   git clone https://github.com/Denistanb/Heart-Disease-Classification.git
+   git clone https://github.com/TensoRag/Heart-Disease-Classification.git
    cd Heart-Disease-Classification
-2. **Install Dependencies**:
+   ```
+2. **Install Dependencies**
    ```bash
    pip install pandas numpy matplotlib seaborn scikit-learn
-3. **Launch the Notebook**:
+   ```
+3. **Launch the Notebook**
    ```bash
    jupyter notebook "Heart Disease Classification.ipynb"
+   ```
+
+## Usage
+- Open the notebook in Jupyter.
+- Run the cells sequentially to perform EDA, train models, and evaluate results.
+- Modify model parameters or try different algorithms as needed.
+
+## Project Structure
+```
+Heart-Disease-Classification/
+├── Data/
+│   ├── heart-disease.csv
+│   └── heart.csv
+├── Heart Disease Classification.ipynb
+├── README.md
+```
+- `Data/`: Contains the datasets used for training and evaluation.
+- `Heart Disease Classification.ipynb`: Main notebook with code, analysis, and results.
+- `README.md`: Project documentation.
+
+## Contributing
+
+Contributions are welcome! To contribute:
+1. Fork the repository
+2. Create a new branch:
+   ```bash
+   git checkout -b feature/your-feature
+   ```
+3. Commit your changes:
+   ```bash
+   git commit -m "Add your feature"
+   ```
+4. Push to your branch:
+   ```bash
+   git push origin feature/your-feature
+   ```
+5. Open a pull request describing your changes.
+
+## Contact
+- **GitHub**: [TensoRag](https://github.com/TensoRag)
+- **Email**: denistanb05@gmail.com
