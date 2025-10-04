@@ -47,7 +47,7 @@ Heart disease is a leading cause of mortality worldwide. Early detection can sav
 
 1. **Clone the Repository**
    ```bash
-   git clone https://github.com/TensoRag/Heart-Disease-Classification.git
+   git clone https://github.com/DCode-v05/Heart-Disease-Classification.git
    cd Heart-Disease-Classification
    ```
 2. **Install Dependencies**
@@ -96,5 +96,5 @@ Contributions are welcome! To contribute:
 5. Open a pull request describing your changes.
 
 ## Contact
-- **GitHub**: [TensoRag](https://github.com/TensoRag)
+- **GitHub**: [DCode-v05](https://github.com/DCode-v05)
 - **Email**: denistanb05@gmail.com
